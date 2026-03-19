@@ -1,7 +1,21 @@
-.country{
+.country {
     border: 2px solid rebeccapurple;
     padding: 20px;
     margin-top: 10px;
-    text-align: center;
     border-radius: 20px;
+}
+
+.btn {
+    padding: 8px;
+    font-size: 18px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.btn2 {
+    padding: 8px;
+    background-color: rgb(98, 98, 240);
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
 }

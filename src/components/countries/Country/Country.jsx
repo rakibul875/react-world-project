@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './country.css'
 
 const Country = ({ country }) => {
+    const [Visited,setVisited]=useState(false)
+    const handelVisited= ()=>{
+        setVisited(!Visited)
+    }
 
     return (
         <div className='country'>
@@ -12,6 +16,8 @@ const Country = ({ country }) => {
             <p>area:{country.area.area} {
                 country.area.area >3000000 ? "Big country":"Small country"
             }</p>
+
+            <button onClick={handelVisited} className="">{Visited? "Visited":"Not Visited"}</button>
         </div>
     );
 };
